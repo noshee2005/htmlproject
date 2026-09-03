@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Categories | Leather Craft</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      .page-banner {
+        background: #2c1d11;
+        color: #fff;
+        padding: 40px 8%;
+        text-align: center;
+      }
+      .categories-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 50px 8%;
+      }
+      .cat-box {
+        position: relative;
+        border-radius: 8px;
+        overflow: hidden;
+        height: 280px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      .cat-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.4s;
+      }
+      .cat-box:hover img {
+        transform: scale(1.05);
+      }
+      .cat-overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.4);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+      .cat-overlay h2 {
+        font-size: 22px;
+        margin-bottom: 10px;
+      }
+      .cat-overlay a {
+        color: #fff;
+        text-decoration: none;
+        border: 1px solid #fff;
+        padding: 8px 16px;
+        border-radius: 4px;
+        font-size: 14px;
+        transition: 0.3s;
+      }
+      .cat-overlay a:hover {
+        background: #8b5a2b;
+        border-color: #8b5a2b;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <a href="index.html">LEATHER<span>CRAFT</span></a>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li class="dropdown">
+            <a href="categories.html" class="active"
+              >Categories <i class="fa-solid fa-chevron-down"></i
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a href="categories.html">Men's Bags</a></li>
+              <li><a href="categories.html">Women's Bags</a></li>
+              <li><a href="categories.html">Travel Gear</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="page-banner">
+      <h1>Product Categories</h1>
+      <p>Find what you are looking for</p>
+    </div>
+
+    <div class="categories-grid">
+      <div class="cat-box">
+        <img
+          src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=500"
+          alt="Men's Bags"
+        />
+        <div class="cat-overlay">
+          <h2>Men's Collection</h2>
+          <a href="shop.html">Explore Now</a>
+        </div>
+      </div>
+      <div class="cat-box">
+        <img
+          src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=500"
+          alt="Women's Bags"
+        />
+        <div class="cat-overlay">
+          <h2>Women's Collection</h2>
+          <a href="shop.html">Explore Now</a>
+        </div>
+      </div>
+      <div class="cat-box">
+        <img
+          src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500"
+          alt="Travel Gear"
+        />
+        <div class="cat-overlay">
+          <h2>Travel & Duffles</h2>
+          <a href="shop.html">Explore Now</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
